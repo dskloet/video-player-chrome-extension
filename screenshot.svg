@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="640px" height="400px"
+    viewBox="0 0 640 400">
+<rect x="0" y="0" width="640" height="400" fill="#fff" />
+
+<g transform="translate(50, 50)">
+  <rect x="0" y="0" width="240" height="150" fill="#000" />
+  <path d="M 70 35 v 80 l 100 -40 l -100 -40 z" fill="#fff" />
+  <path d="M 0 160 h 240" stroke-width="2" stroke="#000" />
+  <circle cx="50" cy="160" r="3" fill="#000" />
+</g>
+
+<g transform="translate(300, 250)">
+  <style>
+  .key {
+    font: 36px fixed;
+  }
+  .action {
+    font: 24px fixed;
+  }
+  </style>
+  <rect x="0" y="50" width="40" height="40" stroke="#000" stroke-width="2" fill="transparent"/>
+  <text x="10" y="80" class="key">o</text>
+  <text x="10" y="30" class="action">-3</text>
+
+  <rect x="50" y="50" width="40" height="40" stroke="#000" stroke-width="2" fill="transparent"/>
+  <text x="60" y="80" class="key">p</text>
+  <text x="60" y="30" class="action">+3</text>
+
+  <rect x="100" y="50" width="40" height="40" stroke="#000" stroke-width="2" fill="transparent"/>
+  <text x="110" y="80" class="key">[</text>
+  <text x="110" y="30" class="action">*.9</text>
+
+  <rect x="150" y="50" width="40" height="40" stroke="#000" stroke-width="2" fill="transparent"/>
+  <text x="160" y="80" class="key">]</text>
+  <text x="150" y="30" class="action">*1.1</text>
+
+  <rect x="200" y="50" width="40" height="40" stroke="#000" stroke-width="2" fill="transparent"/>
+  <text x="210" y="80" class="key">\</text>
+  <text x="200" y="30" class="action">skip</text>
+</g>
+
+</svg>
+
