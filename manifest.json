@@ -1,6 +1,6 @@
 {
   "name": "Video player extension",
-  "version": "0.9",
+  "version": "0.9.1",
   "description": "More control over the video player",
   "icons": {
     "128": "icon.png"
