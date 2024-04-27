@@ -97,7 +97,8 @@ function skip() {
 
   });
 
-  (document.querySelector('.ytp-ad-skip-button') ||
+  (document.querySelector('.ytp-skip-ad-button') ||
+   document.querySelector('.ytp-ad-skip-button') ||
    document.querySelector('.ytp-ad-skip-button-modern') ||
    document.querySelector('.ytp-ad-overlay-close-button') ||
    document.querySelector('#masthead-ad [aria-label=Close]') ||
