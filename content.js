@@ -84,25 +84,18 @@ function sleep(millis) {
   });
 }
 
-function skip() {
-  withVideoPlayer((videoPlayer) => {
+async function skip() {
+  withVideoPlayer(async (videoPlayer) => {
 
     const delta = 5;
     videoPlayer.playbackRate += delta;
     console.log(`playbackRate = ${videoPlayer.playbackRate}`);
-    sleep(1000).then(() => {
-      videoPlayer.playbackRate -= delta;
-      console.log(`playbackRate = ${videoPlayer.playbackRate}`);
-    });
 
+    await sleep(1000);
+
+    videoPlayer.playbackRate -= delta;
+    console.log(`playbackRate = ${videoPlayer.playbackRate}`);
   });
-
-  (document.querySelector('.ytp-skip-ad-button') ||
-   document.querySelector('.ytp-ad-skip-button') ||
-   document.querySelector('.ytp-ad-skip-button-modern') ||
-   document.querySelector('.ytp-ad-overlay-close-button') ||
-   document.querySelector('#masthead-ad [aria-label=Close]') ||
-   { click: () => { console.log('No skip button found.'); } }).click();
 }
 
 document.body.addEventListener('keydown', onKeyDown, true /* capture */);
